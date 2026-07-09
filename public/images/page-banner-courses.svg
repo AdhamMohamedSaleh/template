@@ -1,0 +1,15 @@
+<svg width="1600" height="700" viewBox="0 0 1600 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBannerCourses" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14749e" />
+      <stop offset="100%" stop-color="#041c2c" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#pageBannerCourses)" />
+  <circle cx="220" cy="560" r="18" fill="#5fb3d9" opacity="0.22" />
+  <circle cx="320" cy="470" r="10" fill="#5fb3d9" opacity="0.2" />
+  <circle cx="150" cy="380" r="7" fill="#5fb3d9" opacity="0.25" />
+  <circle cx="1320" cy="150" r="22" fill="#5fb3d9" opacity="0.16" />
+  <circle cx="1420" cy="260" r="12" fill="#5fb3d9" opacity="0.2" />
+  <circle cx="1230" cy="80" r="7" fill="#5fb3d9" opacity="0.25" />
+</svg>
