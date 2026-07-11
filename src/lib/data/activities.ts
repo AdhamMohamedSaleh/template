@@ -6,7 +6,10 @@ export const activities: Activity[] = [
     slug: "discover-scuba-diving",
     priceUsd: 90,
     durationHours: 3,
-    images: ["/images/activity-placeholder-1.svg"],
+    images: [
+      "/images/activity-placeholder-1.svg",
+      "/images/activity-placeholder-1b.svg",
+    ],
     title: {
       en: "Discover Scuba Diving",
       de: "Discover Scuba Diving",
@@ -33,7 +36,10 @@ export const activities: Activity[] = [
     slug: "snorkeling-excursion",
     priceUsd: 45,
     durationHours: 4,
-    images: ["/images/activity-placeholder-2.svg"],
+    images: [
+      "/images/activity-placeholder-2.svg",
+      "/images/activity-placeholder-2b.svg",
+    ],
     title: {
       en: "Snorkeling Excursion",
       de: "Schnorchel-Ausflug",
@@ -60,7 +66,10 @@ export const activities: Activity[] = [
     slug: "night-dive-experience",
     priceUsd: 70,
     durationHours: 2,
-    images: ["/images/activity-placeholder-3.svg"],
+    images: [
+      "/images/activity-placeholder-3.svg",
+      "/images/activity-placeholder-3b.svg",
+    ],
     title: {
       en: "Night Dive Experience",
       de: "Nachttauchgang-Erlebnis",
@@ -87,7 +96,10 @@ export const activities: Activity[] = [
     slug: "underwater-photography-session",
     priceUsd: 120,
     durationHours: 3,
-    images: ["/images/activity-placeholder-4.svg"],
+    images: [
+      "/images/activity-placeholder-4.svg",
+      "/images/activity-placeholder-4b.svg",
+    ],
     title: {
       en: "Underwater Photography Session",
       de: "Unterwasserfotografie-Session",
@@ -108,5 +120,125 @@ export const activities: Activity[] = [
     },
     createdAt: "2025-11-13T09:00:00.000Z",
     updatedAt: "2025-11-13T09:00:00.000Z",
+  },
+  {
+    id: "activity-5",
+    slug: "freediving-taster-session",
+    priceUsd: 65,
+    durationHours: 2,
+    images: [
+      "/images/activity-placeholder-5.svg",
+      "/images/activity-placeholder-5b.svg",
+    ],
+    title: {
+      en: "Freediving Taster Session",
+      de: "Freediving-Schnupperkurs",
+      ru: "Пробное занятие по фридайвингу",
+      it: "Sessione introduttiva di apnea",
+    },
+    summary: {
+      en: "Learn breath-hold basics and glide down the line on a single breath.",
+      de: "Lerne die Grundlagen des Atemanhaltens und gleite an der Leine hinab — mit nur einem Atemzug.",
+      ru: "Освойте основы задержки дыхания и погрузитесь вдоль линии на одном вдохе.",
+      it: "Impara le basi dell'apnea e scivola lungo la sagola con un solo respiro.",
+    },
+    description: {
+      en: "A calm, land-based breathing workshop followed by shallow open-water pool dives with a freediving instructor — no experience required.",
+      de: "Ein ruhiger Atemworkshop an Land, gefolgt von flachen Tauchgängen im offenen Wasser mit einem Freediving-Instruktor — keine Vorerfahrung nötig.",
+      ru: "Спокойный тренинг по дыханию на суше, за которым следуют неглубокие погружения на открытой воде с инструктором по фридайвингу — опыт не требуется.",
+      it: "Un tranquillo workshop di respirazione a terra seguito da immersioni in acque poco profonde con un istruttore di apnea — nessuna esperienza richiesta.",
+    },
+    createdAt: "2025-11-14T09:00:00.000Z",
+    updatedAt: "2025-11-14T09:00:00.000Z",
+  },
+  {
+    id: "activity-6",
+    slug: "stand-up-paddleboard-tour",
+    priceUsd: 35,
+    durationHours: 2,
+    images: [
+      "/images/activity-placeholder-6.svg",
+      "/images/activity-placeholder-6b.svg",
+    ],
+    title: {
+      en: "Stand-Up Paddleboard Tour",
+      de: "Stand-Up-Paddleboard-Tour",
+      ru: "Тур на сапборде",
+      it: "Tour in stand-up paddle",
+    },
+    summary: {
+      en: "Paddle calm coastal water at sunrise — no diving gear, just balance and fresh air.",
+      de: "Paddle bei Sonnenaufgang über ruhiges Küstenwasser — keine Tauchausrüstung, nur Balance und frische Luft.",
+      ru: "Гребля по спокойной прибрежной воде на рассвете — без снаряжения для дайвинга, только баланс и свежий воздух.",
+      it: "Rema su acque costiere calme all'alba — niente attrezzatura da sub, solo equilibrio e aria fresca.",
+    },
+    description: {
+      en: "A guided paddleboard tour along the shoreline, boards and life vests included — a relaxed surface activity for the whole family.",
+      de: "Eine geführte Paddleboard-Tour entlang der Küste, Boards und Schwimmwesten inklusive — eine entspannte Aktivität an der Wasseroberfläche für die ganze Familie.",
+      ru: "Тур на сапборде вдоль побережья с гидом, доски и спасательные жилеты включены — расслабленное занятие на поверхности воды для всей семьи.",
+      it: "Un tour guidato in paddleboard lungo la costa, tavole e giubbotti salvagente inclusi — un'attività rilassante in superficie per tutta la famiglia.",
+    },
+    createdAt: "2025-11-15T09:00:00.000Z",
+    updatedAt: "2025-11-15T09:00:00.000Z",
+  },
+  {
+    id: "activity-7",
+    slug: "reef-clean-up-dive",
+    priceUsd: 25,
+    durationHours: 3,
+    images: [
+      "/images/activity-placeholder-7.svg",
+      "/images/activity-placeholder-7b.svg",
+    ],
+    title: {
+      en: "Reef Clean-Up Dive",
+      de: "Riff-Reinigungstauchgang",
+      ru: "Погружение по очистке рифа",
+      it: "Immersione di pulizia della barriera",
+    },
+    summary: {
+      en: "Dive with a purpose — help remove debris from a local reef alongside our team.",
+      de: "Tauche mit Sinn — hilf gemeinsam mit unserem Team, Müll von einem lokalen Riff zu entfernen.",
+      ru: "Погружение с пользой — помогите нашей команде очистить местный риф от мусора.",
+      it: "Immergiti con uno scopo — aiuta il nostro team a rimuovere i rifiuti da una barriera locale.",
+    },
+    description: {
+      en: "A community conservation dive collecting marine debris, with collection bags and gloves provided — certified divers welcome to join our regular clean-up crew.",
+      de: "Ein gemeinschaftlicher Umwelttauchgang zum Sammeln von Meeresmüll, Sammelsäcke und Handschuhe werden gestellt — zertifizierte Taucher sind herzlich eingeladen, unserem Reinigungsteam beizutreten.",
+      ru: "Общественное природоохранное погружение по сбору морского мусора, мешки для сбора и перчатки предоставляются — сертифицированные дайверы могут присоединиться к нашей постоянной команде по очистке.",
+      it: "Un'immersione di conservazione comunitaria per raccogliere rifiuti marini, sacchi e guanti forniti — i sub certificati sono benvenuti nel nostro team di pulizia.",
+    },
+    createdAt: "2025-11-16T09:00:00.000Z",
+    updatedAt: "2025-11-16T09:00:00.000Z",
+  },
+  {
+    id: "activity-8",
+    slug: "sunset-boat-cruise",
+    priceUsd: 40,
+    durationHours: 2,
+    images: [
+      "/images/activity-placeholder-8.svg",
+      "/images/activity-placeholder-8b.svg",
+    ],
+    title: {
+      en: "Sunset Boat Cruise",
+      de: "Sonnenuntergangs-Bootsfahrt",
+      ru: "Круиз на закате",
+      it: "Crociera al tramonto",
+    },
+    summary: {
+      en: "Unwind on the water as the sun sets over the Red Sea — drinks and snacks on board.",
+      de: "Entspanne auf dem Wasser, während die Sonne über dem Roten Meer untergeht — Getränke und Snacks an Bord.",
+      ru: "Расслабьтесь на воде, наблюдая закат над Красным морем — напитки и закуски на борту.",
+      it: "Rilassati sull'acqua mentre il sole tramonta sul Mar Rosso — bevande e snack a bordo.",
+    },
+    description: {
+      en: "A relaxed evening cruise along the coastline with light snacks and drinks, perfect for couples, families, or anyone wanting a break from diving.",
+      de: "Eine entspannte Abendfahrt entlang der Küste mit leichten Snacks und Getränken — perfekt für Paare, Familien oder alle, die eine Pause vom Tauchen möchten.",
+      ru: "Расслабляющий вечерний круиз вдоль побережья с лёгкими закусками и напитками — идеально для пар, семей или всех, кто хочет отдохнуть от дайвинга.",
+      it: "Una rilassante crociera serale lungo la costa con snack leggeri e bevande, perfetta per coppie, famiglie o chiunque voglia una pausa dalle immersioni.",
+    },
+    createdAt: "2025-11-17T09:00:00.000Z",
+    updatedAt: "2025-11-17T09:00:00.000Z",
   },
 ];

@@ -6,7 +6,7 @@ export default async function CoursesCarouselSection() {
 
   return (
     <section className="bg-muted/40 py-20 md:py-28">
-      <div className="-mx-20 px-4">
+      <div className="container mx-auto px-4">
         <CoursesCarousel courses={courses} />
       </div>
     </section>

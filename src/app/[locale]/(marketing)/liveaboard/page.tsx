@@ -38,7 +38,7 @@ export default async function LiveaboardsPage() {
           {boats.map((boat) => (
             <div
               key={boat.id}
-              className="flex flex-col items-center gap-8 md:flex-row md:gap-16 md:even:flex-row-reverse"
+              className="flex flex-col gap-8 md:flex-row md:gap-16 md:even:flex-row-reverse"
             >
               <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm md:w-1/2">
                 <Image

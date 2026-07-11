@@ -124,6 +124,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply bg-background text-foreground/80 text-base;
   }
@@ -174,27 +178,46 @@
    Deliberately NOT wrapped in `@layer components` — Turbopack's Tailwind v4
    pipeline silently drops hand-written rules inside that layer. */
 .image-shine {
-  position: relative;
-  overflow: hidden;
+  @apply relative overflow-hidden;
 }
 .image-shine::after {
   content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    115deg,
-    transparent 20%,
-    rgba(255, 255, 255, 0.15) 40%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0.15) 60%,
-    transparent 80%
-  );
-  transform: translateX(-130%);
-  transition: transform 0.5s ease-out;
-  transition-delay: 0s;
-  will-change: transform;
-  pointer-events: none;
+  @apply pointer-events-none absolute inset-0 -translate-x-[130%] bg-[linear-gradient(115deg,transparent_20%,rgba(255,255,255,0.15)_40%,rgba(255,255,255,0.5)_50%,rgba(255,255,255,0.15)_60%,transparent_80%)] transition-transform duration-500 [transition-timing-function:ease-out] will-change-transform;
 }
 .group:hover .image-shine::after {
-  transform: translateX(130%);
+  @apply translate-x-[130%];
+}
+
+/* Strip Leaflet's default popup chrome (padding/rounding/shadow) so the
+   dive-site card supplies its own — only the tip arrow keeps a color,
+   matched to the card background so it reads as one continuous shape. */
+.dive-site-popup .leaflet-popup-content-wrapper {
+  @apply rounded-lg bg-transparent p-0 shadow-none;
+}
+.dive-site-popup .leaflet-popup-content {
+  @apply m-0 w-auto!;
+}
+.dive-site-popup .leaflet-popup-content p {
+  @apply m-0;
+}
+.dive-site-popup .leaflet-popup-tip {
+  @apply bg-card shadow-none;
+}
+
+/* Site-wide thin, rounded scrollbar — applies to the page and any
+   overflow-auto/scroll container (dive-sites list, dashboard tables, etc). */
+html {
+  @apply [scrollbar-width:thin] [scrollbar-color:var(--ocean-300)_transparent];
+}
+*::-webkit-scrollbar {
+  @apply h-1.5 w-1.5;
+}
+*::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+*::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-ocean-300 transition-colors;
+}
+*::-webkit-scrollbar-thumb:hover {
+  @apply bg-ocean-500;
 }

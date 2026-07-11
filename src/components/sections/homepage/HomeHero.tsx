@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 
@@ -8,22 +9,14 @@ export default function HomeHero() {
   return (
     <section className="relative -mt-20 h-screen overflow-hidden md:-mt-28">
       {/* Background Image */}
-      <picture>
-        {/* Desktop */}
-        <source
-          media="(min-width: 768px)"
-          srcSet="/images/banner-desktop.svg"
-        />
-
-        {/* Mobile */}
-        <source media="(max-width: 767px)" srcSet="/images/banner-mobile.svg" />
-
-        <img
-          src="/images/banner-desktop.svg"
-          alt={t("heroImageAlt")}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </picture>
+      <Image
+        fill
+        priority
+        sizes="100vw"
+        src="/images/banner-desktop.svg"
+        alt={t("heroImageAlt")}
+        className="object-cover"
+      />
 
       {/* Overlay from bottom to top */}
       <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />

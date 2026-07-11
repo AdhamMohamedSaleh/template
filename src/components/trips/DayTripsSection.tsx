@@ -24,11 +24,11 @@ export default async function DayTripsSection({ trips, locale }: Props) {
           </div>
 
           <Button asChild size="lg" variant="brand" className="rounded-xl">
-            <Link href="/booking?category=day-trip">{t("bookNow")}</Link>
+            <Link href="/trips">{t("viewAll")}</Link>
           </Button>
         </div>
 
-        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4">
+        <div className="mt-10 -mx-4 flex justify-between snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4">
           {trips.map((trip) => (
             <div key={trip.id} className="w-110 shrink-0 snap-start">
               <TripListingCard trip={trip} locale={locale} />

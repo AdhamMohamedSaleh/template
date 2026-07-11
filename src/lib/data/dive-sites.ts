@@ -1,4 +1,4 @@
-import { Translated } from "@/lib/api/types";
+import { CourseLevel, Translated } from "@/lib/api/types";
 
 export interface DiveSite {
   id: string;
@@ -9,6 +9,8 @@ export interface DiveSite {
   lat: number;
   lng: number;
   maxDepthMeters: number;
+  visibilityMeters: number;
+  difficulty: CourseLevel;
 }
 
 export const diveSites: DiveSite[] = [
@@ -31,6 +33,8 @@ export const diveSites: DiveSite[] = [
     lat: 27.25,
     lng: 33.95,
     maxDepthMeters: 18,
+    visibilityMeters: 20,
+    difficulty: "beginner",
   },
   {
     id: "site-2",
@@ -51,6 +55,8 @@ export const diveSites: DiveSite[] = [
     lat: 27.5589,
     lng: 33.9411,
     maxDepthMeters: 30,
+    visibilityMeters: 15,
+    difficulty: "advanced",
   },
   {
     id: "site-3",
@@ -71,6 +77,8 @@ export const diveSites: DiveSite[] = [
     lat: 27.0333,
     lng: 33.8667,
     maxDepthMeters: 30,
+    visibilityMeters: 25,
+    difficulty: "advanced",
   },
   {
     id: "site-4",
@@ -91,6 +99,8 @@ export const diveSites: DiveSite[] = [
     lat: 27.3167,
     lng: 33.8833,
     maxDepthMeters: 24,
+    visibilityMeters: 20,
+    difficulty: "advanced",
   },
   {
     id: "site-5",
@@ -111,5 +121,7 @@ export const diveSites: DiveSite[] = [
     lat: 27.3667,
     lng: 33.8167,
     maxDepthMeters: 15,
+    visibilityMeters: 20,
+    difficulty: "beginner",
   },
 ];

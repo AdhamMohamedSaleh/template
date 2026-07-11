@@ -99,6 +99,7 @@
     "viewCourse": "Vedi corso",
     "minAge": "Età min. {age}",
     "maxDepth": "Profondità max {depth}m",
+    "visibility": "Visibilità {meters}m",
     "courseDuration": "{days, plural, one {# giorno} other {# giorni}}",
     "tripsEyebrow": "Escursioni in barca",
     "tripsHeading": "Scopri le nostre escursioni",
@@ -171,7 +172,7 @@
     "snorkelingFeature1": "Attrezzatura completa inclusa",
     "snorkelingFeature2": "Perfetto per principianti e bambini",
     "snorkelingFeature3": "Gruppi piccoli e rilassati",
-    "bookNow": "Prenota ora",
+    "viewAll": "Vedi tutti",
     "viewFleetLink": "Vedi la Nostra Flotta"
   },
   "Blog": {

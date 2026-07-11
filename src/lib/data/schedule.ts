@@ -13,6 +13,7 @@ export interface ScheduleEntry {
   id: string;
   day: ScheduleDay;
   time: string;
+  endTime: string;
   title: Translated<string>;
   location: Translated<string>;
   spots: number;
@@ -24,6 +25,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-1",
     day: "monday",
     time: "08:00",
+    endTime: "16:00",
     title: {
       en: "Giftun Island Day Trip",
       de: "Giftun Island Tagesausflug",
@@ -43,6 +45,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-2",
     day: "tuesday",
     time: "09:00",
+    endTime: "15:00",
     title: {
       en: "Dolphin House Day Trip",
       de: "Dolphin House Tagesausflug",
@@ -62,6 +65,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-3",
     day: "wednesday",
     time: "08:00",
+    endTime: "16:00",
     title: {
       en: "Abu Nuhas Wreck Day Trip",
       de: "Abu Nuhas Wrack-Tagesausflug",
@@ -81,6 +85,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-4",
     day: "thursday",
     time: "09:00",
+    endTime: "14:00",
     title: {
       en: "Orange Bay Snorkeling Trip",
       de: "Orange Bay Schnorchel-Ausflug",
@@ -100,6 +105,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-5",
     day: "friday",
     time: "19:00",
+    endTime: "21:00",
     title: {
       en: "Night Dive Experience",
       de: "Nachttauchgang-Erlebnis",
@@ -119,6 +125,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-6",
     day: "saturday",
     time: "08:00",
+    endTime: "15:00",
     title: {
       en: "Mahmya Island Snorkeling Trip",
       de: "Mahmya Island Schnorchel-Ausflug",
@@ -138,6 +145,7 @@ export const schedule: ScheduleEntry[] = [
     id: "schedule-7",
     day: "sunday",
     time: "10:00",
+    endTime: "13:00",
     title: {
       en: "Discover Scuba Diving",
       de: "Discover Scuba Diving",

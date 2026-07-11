@@ -64,8 +64,8 @@ export default async function SchedulePage() {
                     <TableCell className="px-6 py-4 font-semibold text-heading">
                       {tDays(entry.day)}
                     </TableCell>
-                    <TableCell className="px-6 py-4 text-muted-foreground">
-                      {entry.time}
+                    <TableCell className="px-6 py-4 whitespace-nowrap text-muted-foreground">
+                      {entry.time} – {entry.endTime}
                     </TableCell>
                     <TableCell className="px-6 py-4 whitespace-normal">
                       <p className="font-medium text-heading">
@@ -85,7 +85,7 @@ export default async function SchedulePage() {
                     <TableCell className="px-6 py-4 text-right">
                       <Button
                         asChild
-                        size="sm"
+                        size="lg"
                         variant="ocean"
                         className="rounded-xl"
                       >

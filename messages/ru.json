@@ -99,6 +99,7 @@
     "viewCourse": "Смотреть курс",
     "minAge": "Мин. возраст {age}",
     "maxDepth": "Макс. глубина {depth}м",
+    "visibility": "Видимость {meters}м",
     "courseDuration": "{days, plural, one {# день} few {# дня} many {# дней} other {# дня}}",
     "tripsEyebrow": "Морские и лодочные туры",
     "tripsHeading": "Наши туры",
@@ -171,7 +172,7 @@
     "snorkelingFeature1": "Всё снаряжение включено",
     "snorkelingFeature2": "Идеально для начинающих и детей",
     "snorkelingFeature3": "Небольшие, спокойные группы",
-    "bookNow": "Забронировать",
+    "viewAll": "Смотреть все",
     "viewFleetLink": "Смотреть наш флот"
   },
   "Blog": {

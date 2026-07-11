@@ -24,6 +24,7 @@ export default function PageBanner({
       <Image
         fill
         priority
+        sizes="100vw"
         src={image}
         alt=""
         aria-hidden

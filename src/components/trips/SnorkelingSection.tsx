@@ -77,7 +77,7 @@ export default async function SnorkelingSection({ trips, locale }: Props) {
               variant="ocean"
               className="mt-8 rounded-xl"
             >
-              <Link href="/booking?category=snorkeling">{t("bookNow")}</Link>
+              <Link href="/trips">{t("viewAll")}</Link>
             </Button>
           </div>
         </div>

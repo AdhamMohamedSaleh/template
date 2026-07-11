@@ -21,8 +21,8 @@ export default async function DivingCenterPage() {
         ]}
       />
 
-      <div className="py-16 md:py-24">
-        <div className="flex flex-col gap-20 md:gap-28">
+      <div className="overflow-hidden py-16 md:py-24">
+        <div className="container mx-auto flex flex-col gap-20 px-4 md:gap-28">
           {divingCenterFeatures.map((feature) => (
             <div
               key={feature.id}
