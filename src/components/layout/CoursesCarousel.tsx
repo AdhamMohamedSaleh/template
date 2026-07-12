@@ -1,10 +1,11 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { Tabs as TabsPrimitive } from "radix-ui";
 import { Clock, Gauge, User } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import {
   Carousel,
   CarouselContent,
@@ -12,6 +13,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 import type { Course, CourseLevel, Locale } from "@/lib/api/types";
 import Image from "next/image";
 
@@ -33,13 +35,21 @@ export default function CoursesCarousel({ courses }: Props) {
           <h2>{t("coursesHeading")}</h2>
         </div>
 
-        <TabsList>
+        <TabsPrimitive.List className="mx-auto flex w-fit flex-wrap justify-center gap-1 rounded-full bg-muted p-1">
           {levels.map((level) => (
-            <TabsTrigger key={level} value={level} className="cursor-pointer">
+            <TabsPrimitive.Trigger
+              key={level}
+              value={level}
+              className={cn(
+                "rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors",
+                "cursor-pointer data-[state=active]:bg-teal data-[state=active]:text-white",
+                "data-[state=inactive]:text-muted-foreground data-[state=inactive]:hover:text-foreground",
+              )}
+            >
               {tCourses(level)}
-            </TabsTrigger>
+            </TabsPrimitive.Trigger>
           ))}
-        </TabsList>
+        </TabsPrimitive.List>
       </div>
 
       {levels.map((level) => {

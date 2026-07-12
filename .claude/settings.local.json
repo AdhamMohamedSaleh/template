@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(pnpm dlx *)",
-      "Bash(pnpm build *)"
+      "Bash(pnpm build *)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:3000/en)",
+      "Bash(curl -s http://localhost:3000/en/courses)",
+      "Bash(grep -o 'bg-muted/40[^\"]*' /tmp/home.html | head -2; echo \"---\"; grep -o 'class=\"[^\"]*bg-muted p-1[^\"]*\"' /tmp/home.html | head -3; echo \"---courses---\"; grep -o 'class=\"[^\"]*bg-muted p-1[^\"]*\"' /tmp/courses.html | head -3)",
+      "Read(//tmp/**)",
+      "Bash(grep -o '<body[^>]*>' /tmp/courses.html | head -1)"
     ]
   }
 }
